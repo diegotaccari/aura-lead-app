@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Metamorfosis & Tracción 2026 | Evento de Alto Impacto',
-  description: 'Rompe el autosabotaje, reconfigura tu mentalidad y acelera tus resultados profesionales. Conoce a Aura, tu asesora de transformación.',
-  keywords: ['mindset', 'psicología aplicada', 'desarrollo profesional', 'conversión de leads', 'evento de inmersión'],
+  title: 'Coral Mujaes | Ecosistema Oficial & Asesora Aura AI',
+  description: 'Desactiva el autosabotaje, desarrolla disciplina inquebrantable y escala tus negocios digitales. Conoce a Aura, la asesora de conversión del equipo de Coral Mujaes.',
+  keywords: ['Coral Mujaes', 'disciplina', 'mindset', 'Coral Mujaes University', 'infoproductos', 'alto rendimiento'],
 };
 
 export default function RootLayout({

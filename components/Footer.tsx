@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Sparkles, Shield, Mail } from 'lucide-react';
+import { Sparkles, Mail, ExternalLink } from 'lucide-react';
 
 interface FooterProps {
   onOpenLeads: () => void;
@@ -15,11 +15,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLeads, onOpenChat }) => {
         
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
-            <Sparkles className="w-4 h-4" />
+            <span className="font-serif font-black">CM</span>
           </div>
           <div>
-            <div className="font-bold text-slate-300 text-sm">METAMORFOSIS & TRACCIÓN 2026</div>
-            <div>Ecosistema de psicología aplicada, mindset y alto rendimiento</div>
+            <div className="font-bold text-slate-300 text-sm">CORAL MUJAES • ECOSISTEMA OFICIAL</div>
+            <div>Inspiración, disciplina implacable y negocios digitales de alto rendimiento</div>
           </div>
         </div>
 
@@ -37,17 +37,26 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLeads, onOpenChat }) => {
             Panel de Leads (Admin)
           </button>
           <a
-            href="mailto:soporte@ejemplo.com"
+            href="https://coralmujaes.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-amber-400 transition-colors flex items-center gap-1"
+          >
+            <span>coralmujaes.com</span>
+            <ExternalLink className="w-3 h-3" />
+          </a>
+          <a
+            href="mailto:soporte@coralmujaes.com"
             className="hover:text-amber-400 transition-colors flex items-center gap-1"
           >
             <Mail className="w-3.5 h-3.5" />
-            <span>Soporte Humano</span>
+            <span>Soporte</span>
           </a>
         </div>
 
         <div className="text-center md:text-right">
-          <div>© {new Date().getFullYear()} Todos los derechos reservados.</div>
-          <div className="text-[11px] text-slate-600 mt-0.5">Optimizado para despliegue en Vercel</div>
+          <div>© {new Date().getFullYear()} Coral Mujaes. Todos los derechos reservados.</div>
+          <div className="text-[11px] text-slate-600 mt-0.5">Potenciado por Aura Lead Conversion AI</div>
         </div>
 
       </div>

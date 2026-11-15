@@ -1,62 +1,62 @@
 'use client';
 
 import React from 'react';
-import { Layers, CheckCircle2, Shield, Compass, Flame } from 'lucide-react';
+import { Layers, CheckCircle2, ShieldAlert, Award, TrendingUp } from 'lucide-react';
 
 export const Pillars: React.FC = () => {
   const pillars = [
     {
       step: '01',
-      title: 'Reprogramación & Desactivación del Freno',
-      icon: Shield,
+      title: 'Mentalidad de Alto Calibre & Cero Excusas',
+      icon: ShieldAlert,
       description:
-        'Identificamos los mandatos inconscientes y los miedos a la exposición que detonan el autosabotaje cuando estás a punto de crecer.',
+        'Desactivamos el victimismo y la necesidad de aprobación. Reprogramas tu diálogo interno para operar como una persona que ya factura y lidera a gran escala.',
       outcomes: [
-        'Eliminación de la duda paralizante antes de ejecutar',
-        'Técnicas de regulación del sistema nervioso ante la presión',
-        'Fin de la justificación de "no tener tiempo"',
+        'Fin a la justificación del "no tengo tiempo" o "no tengo dinero"',
+        'Elevación inmediata de tu estándar de vida y negocios',
+        'Regulación emocional bajo presión extrema',
       ],
     },
     {
       step: '02',
-      title: 'Arquitectura de Claridad Estratégica',
-      icon: Compass,
+      title: 'Disciplina Férrea de Atleta de Alto Rendimiento',
+      icon: Award,
       description:
-        'Diseñas un sistema de priorización despiadado. Pasar de tener 20 cosas a medias a dominar las 3 palancas que mueven el 80% de tus ingresos.',
+        'Coral entrena como fisicoculturista de élite y aplica la misma disciplina al negocio: consistencia matemática, hábitos diarios innegociables y foco quirúrgico.',
       outcomes: [
-        'Mapa de prioridades semanales blindado contra distracciones',
-        'Eliminación del trabajo reactivo ("apagar fuegos")',
-        'Recuperación de 10 a 15 horas semanales de tiempo libre real',
+        'Rutinas diarias de energía y peak performance comprobadas',
+        'Eliminación total de la postergación en tareas críticas',
+        'Consistencia que no depende de si "tienes ganas" o no',
       ],
     },
     {
       step: '03',
-      title: 'Tracción & Ejecución Implacable',
-      icon: Flame,
+      title: 'Cashflow Digital & Monetización de Alto Valor',
+      icon: TrendingUp,
       description:
-        'Instalamos rituales de acción sin fricción para que la consistencia no dependa de tu estado de ánimo ni de la motivación pasajera.',
+        'Estrategias de empaquetado de infoproductos, lanzamientos masivos y ofertas High-Ticket que han generado más de 8 cifras en el mercado hispanohablante.',
       outcomes: [
-        'Constancia que no requiere agotamiento ni estrés',
-        'Confianza sólida para cobrar y posicionarte con autoridad',
-        'Acompañamiento y rendición de cuentas (accountability)',
+        'Estructuración de ofertas irresistibles de alto valor',
+        'Sistemas de atracción de prospectos cualificados',
+        'Autoridad de marca personal para cobrar con solidez',
       ],
     },
   ];
 
   return (
-    <section id="pilares" className="py-24 bg-slate-900/40 border-t border-slate-900 relative">
+    <section id="programas" className="py-24 bg-slate-900/50 border-t border-slate-900 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold tracking-wide uppercase mb-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-400 text-xs font-bold tracking-wide uppercase mb-3">
             <Layers className="w-3.5 h-3.5" />
-            <span>El Método de Transformación</span>
+            <span>La Metodología Oficial de Coral</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Los 3 Pilares de Tracción Definitiva
+            Los 3 Pilares del Ecosistema Coral Mujaes
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Un sistema probado que une psicología cognitiva, diseño de hábitos y modelos de negocio de alto impacto.
+            La misma fórmula que sacó a Coral del abismo y la llevó a construir un imperio digital líder en América Latina.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export const Pillars: React.FC = () => {
                     <span className="text-3xl font-black font-mono text-slate-700">
                       {pillar.step}
                     </span>
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500/20 to-indigo-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500/20 to-amber-600/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
                       <Icon className="w-6 h-6" />
                     </div>
                   </div>

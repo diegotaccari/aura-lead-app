@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, CheckCircle, Sparkles, Shield, ArrowRight } from 'lucide-react';
+import { X, CheckCircle, Shield, ArrowRight } from 'lucide-react';
 
 interface RegistrationModalProps {
   isOpen: boolean;
@@ -34,9 +34,9 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
           name,
           email,
           phone,
-          painPoint: 'Registro directo desde la web / CTA oficial',
+          painPoint: 'Registro de interés en programas de Coral Mujaes (coralmujaes.com)',
           qualification: 'listo_para_cerrar',
-          notes: 'Completó el formulario oficial de inscripción.',
+          notes: 'Completó el formulario de acceso oficial a programas de Coral.',
         }),
       });
 
@@ -52,20 +52,20 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md animate-fade-in">
-      <div className="w-full max-w-lg bg-slate-950 border border-slate-800 rounded-2xl shadow-2xl overflow-hidden relative">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+      <div className="w-full max-w-lg bg-slate-950 border border-amber-500/30 rounded-2xl shadow-2xl overflow-hidden relative">
         
         {/* Glow */}
-        <div className="absolute top-0 right-0 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-0 right-0 w-48 h-48 bg-amber-500/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="p-6 sm:p-8">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2">
-              <span className="w-8 h-8 rounded-lg bg-amber-400 text-slate-950 font-black flex items-center justify-center text-xs">
-                M
+              <span className="w-8 h-8 rounded-lg bg-amber-400 text-slate-950 font-black flex items-center justify-center text-xs font-serif">
+                CM
               </span>
               <span className="text-xs uppercase tracking-widest font-mono text-amber-400 font-bold">
-                Metamorfosis 2026
+                Coral Mujaes Ecosistema
               </span>
             </div>
             <button
@@ -78,11 +78,11 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
 
           {!submitted ? (
             <>
-              <h2 className="text-2xl font-extrabold text-white">
-                Asegura tu Cupo Exclusivo
+              <h2 className="text-2xl font-extrabold text-white uppercase">
+                Asegura tu Lugar en el Ecosistema
               </h2>
               <p className="mt-2 text-sm text-slate-300">
-                Completa tus datos para recibir la confirmación oficial, el enlace a la sala privada y el material preparatorio de despegue.
+                Regístrate para recibir información exclusiva de los programas de <strong>Coral Mujaes</strong>, acceso a clases privadas y material de alto impacto.
               </p>
 
               <form onSubmit={handleSubmit} className="mt-6 space-y-4">
@@ -116,7 +116,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
 
                 <div>
                   <label className="block text-xs font-semibold text-slate-300 mb-1.5">
-                    WhatsApp (para coordinar accesos VIP)
+                    WhatsApp (para contacto directo del equipo)
                   </label>
                   <input
                     type="tel"
@@ -134,7 +134,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
                     disabled={loading}
                     className="w-full py-3.5 px-6 rounded-xl font-bold text-sm text-slate-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-lg shadow-amber-500/20 active:scale-98 transition-all flex items-center justify-center gap-2"
                   >
-                    <span>{loading ? 'Confirmando cupo...' : 'Confirmar Mi Lugar Ahora'}</span>
+                    <span>{loading ? 'Procesando...' : 'Quiero Entrar al Ecosistema de Coral'}</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>
@@ -142,17 +142,17 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
 
               <div className="mt-4 flex items-center justify-center gap-2 text-xs text-slate-500">
                 <Shield className="w-3.5 h-3.5 text-amber-400" />
-                <span>Tus datos están protegidos. Cero spam garantizado.</span>
+                <span>Tus datos son 100% confidenciales. Cero spam.</span>
               </div>
             </>
           ) : (
             <div className="text-center py-8">
-              <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 mx-auto flex items-center justify-center mb-4">
+              <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-400 mx-auto flex items-center justify-center mb-4">
                 <CheckCircle className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold text-white">¡Cupo Pre-Asignado!</h3>
+              <h3 className="text-2xl font-bold text-white">¡Registro Confirmado!</h3>
               <p className="mt-2 text-sm text-slate-300 max-w-sm mx-auto">
-                Hemos registrado a <strong className="text-amber-400">{name}</strong>. Te enviamos los detalles a <strong>{email}</strong> y nos contactaremos a tu WhatsApp.
+                Hemos registrado a <strong className="text-amber-400">{name}</strong>. Te enviaremos la información de los programas a <strong>{email}</strong> y nos contactaremos a tu WhatsApp.
               </p>
 
               <button

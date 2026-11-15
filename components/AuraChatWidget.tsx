@@ -29,11 +29,11 @@ const INITIAL_MESSAGES: ChatMessage[] = [
   {
     id: 'msg-init-1',
     role: 'assistant',
-    content: `¡Hola! Qué gusto saludarte. Soy **Aura**.\n\nEstoy aquí para ayudarte a identificar qué patrones o bloqueos te están impidiendo alcanzar el siguiente nivel en tu desarrollo y resultados.\n\nPara ir directo al grano: **¿cuál de estos obstáculos sientes que más te está costando resolver hoy?**`,
+    content: `¡Hola! Qué gusto saludarte. Soy **Aura**, del equipo oficial de **Coral Mujaes** (coralmujaes.com).\n\nAquí no venimos a perder tiempo con rodeos ni motivación pasajera. Estamos para ayudarte a quebrar de raíz los bloqueos de mentalidad, autosabotaje y negocios que te tienen operando a media máquina.\n\nPara ir directo al grano: **¿cuál de estos obstáculos sientes que más te está costando resolver hoy?**`,
     timestamp: 'Ahora',
     quickReplies: [
-      '1. Autosabotaje y postergación',
-      '2. Estancamiento (trabajo sin ver avance)',
+      '1. Autosabotaje y falta de disciplina',
+      '2. Estancamiento (mucho esfuerzo, ingresos en meseta)',
       '3. Falta de claridad y síndrome del impostor',
     ],
   },
@@ -248,10 +248,10 @@ export const AuraChatWidget: React.FC<AuraChatWidgetProps> = ({
                 <h3 className="font-extrabold text-sm text-white flex items-center gap-1.5">
                   Aura
                   <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-400/10 text-amber-300 font-semibold border border-amber-400/20">
-                    IA Conversión & Mindset
+                    Coral Mujaes Team
                   </span>
                 </h3>
-                <p className="text-[11px] text-slate-400">Directa, empática y orientada a tu siguiente nivel</p>
+                <p className="text-[11px] text-slate-400">Disciplina, mentalidad implacable y conversión</p>
               </div>
             </div>
 
